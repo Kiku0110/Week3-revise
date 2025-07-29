@@ -46,31 +46,31 @@
     text-align: center;
 }
 /*註冊表格*/
+/*所有表格的設定*/
 .signup-table{
     width: 100%;
     text-align: center;
 }
 .signup-table a{
     padding: 12px 0;
-}
-.signup-table .login{
-    border-bottom: 2px solid var(--neutral-300);
-}
-.signup-table .login a{
     color: var(--neutral-600);
     border-bottom: 2px solid transparent;
 }
-.signup-table .signup{
-    border-bottom: 2px solid var(--neutral-900);
+.signup-table th{
+    border-bottom: 2px solid var(--neutral-300);
 }
-.signup-table .signup a{
+.signup-table th:hover{
+    border-bottom-color: var(--neutral-900);
+}
+.signup-table th:hover a{
     color: var(--neutral-900);
 }
-.signup-table a:hover{
-    color: var(--neutral-900);
-}
-.signup-table a:active{
+/*針對 active 表格的設定*/
+.signup-table .active{
     border-bottom: 2px solid var(--neutral-900);
+}
+.signup-table .active a{
+    color: var(--neutral-900);
 }
 .form{
     border-radius: 4px;
