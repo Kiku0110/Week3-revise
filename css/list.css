@@ -35,7 +35,6 @@
 }
 /*商品卡片寬度、左右縮排、下方間距*/
 .list-card{
-	width: calc(100%/12*4); 
 	padding: 0 12px;
 	margin-bottom: 48px;
 }
@@ -106,12 +105,11 @@
 	.product-list .h3{
 		padding: 9.5px 0;
 	}
-	.list-card{
-		width: calc(100%/4*2);
-		margin-bottom: 24px;
-	}
 	.list{
 		margin-bottom: 32px;
+	}
+	.list-card{
+		margin-bottom: 24px;
 	}
 	.banner{
 		padding: 32px 0;
