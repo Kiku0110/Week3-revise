@@ -14,33 +14,32 @@
 }
 /*左側logo*/
 /*容器位置*/
-.col-5 .img1{
+.col-5 .bg-img{
     margin: 0 auto;
     width: 100%;
     border-radius: 12px;
-}
-/*加入背景圖*/
-.img1{
+    /*加入背景圖*/
     background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/login.png?raw=true");
     height: 100%;
     background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
+    background-position: center center;
+    background-size: cover;
 }
+
 /*右側登入頁*/
-.col-7 .img2{
+.col-7 .bg-img{
     margin: 0 auto;
     width: 100%;
     border-radius: 12px;
     padding: 120px 80px;
-}
-.img2{
+    /*加入背景圖*/
     background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/login-bg.png?raw=true");
     height: 100%;
     background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
+    background-position: center center;
+    background-size: cover;
 }
+
 .col-7 .login-box{
     margin: 0 auto;
     max-width: 100%;
@@ -54,22 +53,24 @@
 .login-table a{
     padding: 12px 0;
 }
-.login-table .table1{
+.login-table .login{
     border-bottom: 2px solid var(--neutral-900);
 }
-.login-table .table1 a{
+.login-table .login a{
     color: var(--neutral-900);
 }
-.login-table .table2{
+.login-table .signup{
     border-bottom: 2px solid var(--neutral-300);
 }
-.login-table .table2 a{
+.login-table .signup a{
     color: var(--neutral-600);
     border-bottom: 2px solid transparent;
 }
 .login-table a:hover{
     color: var(--neutral-900);
-    background-color: var(--neutral-300);
+}
+.login-table a:active{
+    border-bottom: 2px solid var(--neutral-900);
 }
 .form{
     border-radius: 4px;
