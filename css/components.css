@@ -1,0 +1,38 @@
+/*元件*/
+.breadcrumb-item +.breadcrumb-item::before{
+	content: "/";
+	padding: 0px 12px;
+	color: var(--neutral-300);
+	font-weight: 700;
+}
+.breadcrumb-item{
+	display: flex;
+	font-weight: 500;
+}
+@media(max-width:768px){
+	.breadcrumb-item +.breadcrumb-item::before{
+		padding: 0px 8px;
+	}
+	.breadcrumb-item{
+		font-size: 14px;
+	}
+}
+.item-color{
+	color: var(--neutral-600);
+}
+.btn{
+	border-radius: 4px; /*圓角*/
+	padding: 12px 24px;
+	font-family: "Noto Sans TC",serif;
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+}
+@media(max-width:768px){
+	.btn{
+		padding: 8px 16px;
+	}
+}

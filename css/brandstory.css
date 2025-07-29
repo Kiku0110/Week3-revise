@@ -1,0 +1,193 @@
+/*最上方導覽列*/
+.navbar{
+	padding: 16px 0px;
+}
+.navbar a{
+	border-bottom: 1px solid transparent; /*hover時不會抖動*/
+}
+.navbar a:hover{
+	border-bottom:1px solid var(--neutral-900);
+}
+
+/*表頭圖片設定*/
+.hero-section{
+	background-image:url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week1/hero.png?raw=true");
+	max-width: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+/*表頭標題定位*/
+.page-title{
+	margin: 0 auto;
+	padding: 151px 0;
+}
+.page-title .h2{
+    font-size: 40px;
+	text-align: center;
+	color:var(--neutral-white);
+}
+.page-title .h3{
+	text-align: center;
+	color: var(--neutral-white);
+}
+
+.brand-story{
+	padding: 64px 0;
+}
+/*col-8 定位*/
+.col-8{
+	margin: 0 auto;
+    margin-bottom: 48px;
+}
+/*col-10 定位*/
+.col-10{
+	margin: 0 auto;
+    margin-bottom: 24px;
+}
+/*blockquote 背景、文字設定*/
+.blockquote{
+	text-align: center;
+	padding: 32px;
+	background-color: var(--primary-100);
+}
+.blockquote .h5{
+	margin-bottom: 12px;
+	color: var(--primary-400);
+}
+
+/*brand-intro 圖片設定*/
+.brand-intro img{
+	max-width: 100%;
+	display: block;
+}
+/*intro 底線樣式*/
+.intro{
+	border-bottom: 1px solid var(--neutral-300);
+}
+/*intro 文字顏色*/
+.intro .h5{
+	color: var(--primary-400);
+}
+
+/*histoory 樣式*/
+.histoory{
+    border-bottom: 1px solid var(--neutral-300);
+    padding-bottom: 48px;
+}
+/*histoory li*3 樣式*/
+.histoory li{ 
+	list-style-type: disc;
+	list-style-position: inside;/*實心圓位置往內*/
+	padding-left: 8px;
+}
+
+/*brand-concept 樣式*/
+.brand-concept{
+	border-bottom: 1px solid var(--neutral-300);
+	padding-bottom: 48px;
+}
+/*brand-concept li*3 樣式*/
+.brand-concept ul li{
+	padding-left: 12px; /*左內縮*/
+	border-left: 3px solid var(--neutral-300);
+}
+
+/*story 樣式*/
+.story{
+	border-bottom: 1px solid var(--neutral-300);
+	padding-bottom: 48px;
+}
+.material-symbols-outlined{
+	font-size: 15px;
+	color: var(--primary-400);
+	margin-right: 4px; /*右外推*/
+}
+.story li a{
+	text-decoration-line: none;
+	font-weight: 500;
+	line-height: 1.5;
+	color:var(--primary-400);
+	border-bottom: 1px solid var(--primary-400);
+	padding-bottom: 4px; /*文字跟底線距離*/
+}
+/*新增 a 連結的 hover 效果 */
+.story a:hover{
+	color: var(--neutral-white) ;
+	background: var(--primary-400);
+}
+
+/*橫幅縮排、顏色*/
+.banner{
+	padding: 24px 0;
+	background-color: var(--primary-200);
+}
+/*橫幅按鈕文字、背景顏色*/
+.banner .btn{
+	color: var(--neutral-white);
+	background-color: var(--neutral-900);
+}
+/*橫幅按鈕 hover 效果*/
+.banner .btn:hover{
+	color:var(--neutral-900);
+	background-color: var(--neutral-100);
+}
+/*footer & copyright*/
+.footer{
+	padding: 64px 0;
+	background-color: var(--neutral-100);
+}
+.footer .navbar{
+	margin-bottom: 24px;
+}
+.copyright{
+	text-align: center;
+	border-top: 1px solid var(--neutral-300);
+}
+.copyright p{
+    font-size: 14px;
+    font-weight: 400;
+	color: var(--neutral-600);
+}
+.copyright .p-1{
+	margin-top: 32px;
+}
+
+@media(max-width:768px){
+	.navbar{
+		padding: 12px 0;
+	}
+	.col-md-4{
+		margin-bottom: 32px;
+	}
+	.hero-section{
+		background-image:url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/hero-sm.png?raw=true");
+	}
+	.page-title{
+		padding: 87px 0;
+	}
+	.page-title .h2{
+		font-size: 28px;
+	}
+	.brand-story{
+		padding: 32px 0;
+	}
+	.blockquote{
+		padding: 24px;
+	}
+	.histoory{
+		padding-bottom: 32px;
+	}
+	.brand-concept{
+		padding-bottom: 32px;
+	}
+	.story{
+		padding-bottom: 32px;
+	}
+	.banner{
+		padding: 32px 0;
+	}
+	.footer{
+		padding: 32px 0;
+	}
+}

@@ -1,0 +1,127 @@
+/*最上方導覽列*/
+.navbar{
+	padding: 16px 0px;
+}
+.navbar a{
+	border-bottom: 1px solid transparent; /*hover時不會抖動*/
+}
+.navbar a:hover{
+	border-bottom:1px solid var(--neutral-900);
+}
+/*main*/
+.log-in{
+    padding: 64px 0;
+}
+/*左側logo*/
+/*容器位置*/
+.col-5 .img1{
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 12px;
+}
+/*加入背景圖*/
+.img1{
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/login.png?raw=true");
+    height: 100%;
+    background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+/*右側登入頁*/
+.col-7 .img2{
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 12px;
+    padding: 120px 80px;
+}
+.img2{
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/login-bg.png?raw=true");
+    height: 100%;
+    background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.col-7 .login-box{
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+}
+/*登入表格*/
+.login-table{
+    width: 100%;
+    text-align: center;
+}
+.login-table a{
+    padding: 12px 0;
+}
+.login-table .table1{
+    border-bottom: 2px solid var(--neutral-900);
+}
+.login-table .table1 a{
+    color: var(--neutral-900);
+}
+.login-table .table2{
+    border-bottom: 2px solid var(--neutral-300);
+}
+.login-table .table2 a{
+    color: var(--neutral-600);
+    border-bottom: 2px solid transparent;
+}
+.table2 a:hover{
+    color: var(--neutral-900);
+    border-bottom: 2px solid var(--neutral-900);
+    background-color: var(--neutral-300);
+}
+.form{
+    border-radius: 4px;
+    border: 1px solid var(--neutral-300);
+    background-color: var(--neutral-white);
+}
+.form a{
+    padding: 12px;
+}
+.form img{
+    width: 40px;
+    height: 40px;
+}
+.form p{
+    font-size: 16px;
+}
+.form a:hover{
+    border-bottom: 2px solid var(--neutral-900);
+}
+/*footer & copyright*/
+.footer{
+	padding: 64px 0;
+	background-color: var(--neutral-100);
+}
+.footer .navbar{
+	margin-bottom: 24px;
+}
+.copyright{
+	text-align: center;
+	border-top: 1px solid var(--neutral-300);
+}
+.copyright p{
+	font-size: 14px;
+	font-weight: 400;
+	color: var(--neutral-600);
+}
+.copyright .p-1{
+	margin-top: 32px;
+}
+@media(max-width:768px){
+    .navbar{
+        padding: 12px 0;
+    }
+    .log-in{
+        padding: 0;
+    }
+    .col-7 .img2{
+        background-image: url("");
+        padding:32px 0;
+    }
+    .footer{
+		padding: 32px 0;
+	}
+}

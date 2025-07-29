@@ -1,0 +1,8 @@
+/* 字體 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+@import "reset.css";
+@import "variables.css"; /*變數*/
+@import "base.css"; /*標籤*/
+@import "utils.css"; /*容器、間距、縮排、flex*/
+@import "components.css"; /*元件*/

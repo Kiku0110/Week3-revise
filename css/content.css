@@ -1,0 +1,192 @@
+/*最上方導覽列*/
+.navbar{
+	padding: 16px 0px;
+}
+.navbar a{
+	border-bottom: 1px solid transparent; /*hover時不會抖動*/
+}
+.navbar a:hover{
+	border-bottom:1px solid var(--neutral-900);
+}
+
+/*main*/
+.product-content{
+    padding: 64px 0;
+}
+/*col-7 的格線系統*/
+.product-img{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -4px;
+}
+/*照片寬度、左右縮排*/
+.img-card{
+    max-width:calc(100%/12*6);
+    padding: 0px 4px;
+}
+
+/*col-5 內容*/
+.product-intro{
+    margin-bottom: 32px;
+}
+.price .h5{
+    color: var(--primary-400);
+}
+.price .h6{
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--neutral-500);
+    text-decoration: line-through;
+}
+/*商品顏色選擇*/
+.product-options{
+    margin-bottom: 32px;
+}
+/*顏色照片*/
+.color-img{
+    width: 64px;
+}
+.color-img p{
+    text-align: center;
+    color: var(--neutral-600);
+}
+.color-img a:hover{
+    border: 1px solid var(--neutral-900);
+}
+/*尺寸按鈕*/
+.btn-list .product-size{
+    width: 160px;
+    border: 1px solid var(--neutral-300);
+}
+.btn-list .active{
+    border: 1px solid var(--neutral-900);
+}
+.size .h6{
+    color: var(--functional-danger-300);
+}
+.some:hover{
+    border: 1px solid var(--neutral-900);
+}
+/*已無尺寸 按鈕 cursor 效果*/
+.none{
+    cursor: not-allowed;
+}
+/*收藏&預約試穿 按鈕*/
+.button .btn{
+    width: 50%;
+}
+.btn-white{
+    border: 1px solid var(--neutral-900);
+}
+.btn-black{
+    border: 1px solid var(--neutral-900);
+    color:var(--neutral-white);
+    background-color: var(--neutral-900);
+}
+/*icon 間距*/
+.bi-heart{
+    font-size: 20px; /*新增 icon 大小為 20px*/
+    padding: 2px 0px; /*新增上下 padding 2px*/
+    margin-right: 8px;
+}
+.bi-heart-fill{
+    font-size: 20px; /*新增 icon 大小為 20px*/
+    padding: 2px 0px; /*新增上下 padding 2px*/
+    margin-right: 8px;
+}
+.bi-handbag{
+    font-size: 20px; /*新增 icon 大小為 20px*/
+    padding: 2px 0px; /*新增上下 padding 2px*/
+    margin-right: 8px;
+}
+
+/*隱藏實心愛心*/
+.btn-white .bi-heart-fill{
+    display:none;
+}
+/*收藏按鈕 hover 效果*/
+.btn-white:hover{
+    color:var(--neutral-white);
+    background-color: var(--neutral-900);
+}
+/*新增 收藏按鈕 active 效果*/
+.btn-white:active{
+    color:var(--neutral-900);
+    background-color: var(--neutral-white);
+}
+/*點擊後 隱藏預設文字「加入收藏」*/
+.btn-white:active .btn-word{
+    display: none;
+}
+/*點擊後 更改為「已收藏」*/
+.btn-white:active::after{
+    content: '已收藏';
+}
+/*點擊後 空心愛心隱藏*/
+.btn-white:active .bi-heart{
+    display: none;
+}
+/*點擊後 實心愛心出現*/
+.btn-white:active .bi-heart-fill{
+    display: inline-block;
+}
+
+
+/*資訊欄*/
+.info-list .h5{
+    line-height: 1.5;
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
+.info-item p{
+    font-weight: 400;
+    color:var(--neutral-600);
+}
+.info-item{
+    border-bottom: 1px solid var(--neutral-300);
+    padding-bottom: 12px;
+}
+
+/*熱銷橫幅*/
+.best-seller{
+    padding: 48px 0;
+    margin-bottom: 40px;
+}
+.best-seller .col-3 a:hover{
+    box-shadow: 10px 10px 10px -6px;
+}
+
+/*橫幅*/
+.banner{
+	padding: 24px 0;
+	background-color: var(--primary-200);
+}
+.banner .btn{
+	color: var(--neutral-white);
+	background-color: var(--neutral-900);
+}
+.banner .btn:hover{
+	color:var(--neutral-900);
+	background-color: var(--neutral-100);
+}
+
+/*footer & copyright*/
+.footer{
+	padding: 64px 0;
+	background-color: var(--neutral-100);
+}
+.footer .navbar{
+	margin-bottom: 24px;
+}
+.copyright{
+	text-align: center;
+	border-top: 1px solid var(--neutral-300);
+}
+.copyright p{
+    font-size: 14px;
+    font-weight: 400;
+	color: var(--neutral-600);
+}
+.copyright .p-1{
+	margin-top: 32px;
+}

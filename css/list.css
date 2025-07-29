@@ -1,0 +1,123 @@
+/*最上方導覽列*/
+.navbar{
+	padding: 16px 0px;
+}
+.navbar a{
+	border-bottom: 1px solid transparent; /*hover時不會抖動*/
+}
+.navbar a:hover{
+	border-bottom:1px solid var(--neutral-900);
+}
+
+/*main*/
+.product-list{
+	padding: 32px 0;
+	margin-bottom: 48px;
+}
+/*col-2 內容*/
+/*大標題「所有商品」縮排 */
+.product-list .h3{
+	padding: 7px 0;
+}
+/* 項目「所有商品」的顏色 */
+.menu .menu-item{
+	color: var(--primary-400);
+}
+.menu a:hover{
+	color: var(--primary-400);
+}
+
+/*col-10 的格線系統*/
+.list{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px -12px;
+}
+/*商品卡片寬度、左右縮排、下方間距*/
+.list-card{
+	width: calc(100%/12*4); 
+	padding: 0 12px;
+	margin-bottom: 48px;
+}
+.list-card a:hover{
+	box-shadow: 10px 10px 10px -6px;
+}
+
+/*下方頁面按鈕樣式*/
+.btn-item .btn{
+	padding: 8px 15px;
+	border-radius: none;
+	font-weight: 400;
+}
+/*頁面按鈕「1」樣式*/
+.btn-item .page-1{
+	background-color: var(--primary-300);
+	font-weight: 500;
+}
+.btn-item .page:hover{
+	background-color: var(--primary-300);
+}
+.btn-item .right{
+	cursor:default;
+}
+
+/*橫幅*/
+.banner{
+	padding: 24px 0;
+	background-color: var(--primary-200);
+}
+.banner .btn{
+	color: var(--neutral-white);
+	background-color: var(--neutral-900);
+}
+.banner .btn:hover{
+	color:var(--neutral-900);
+	background-color: var(--neutral-100);
+}
+
+/*footer & copyright*/
+.footer{
+	padding: 64px 0;
+	background-color: var(--neutral-100);
+}
+.footer .navbar{
+	margin-bottom: 24px;
+}
+.copyright{
+	text-align: center;
+	border-top: 1px solid var(--neutral-300);
+}
+.copyright p{
+	font-size: 14px;
+	font-weight: 400;
+	color: var(--neutral-600);
+}
+.copyright .p-1{
+	margin-top: 32px;
+}
+@media(max-width:768px){
+	.navbar{
+		padding: 12px 0;
+	}
+	.product-list{
+		padding: 16px 0;
+		margin-bottom: 24px;
+	}
+	.product-list .h3{
+		padding: 9.5px 0;
+	}
+	.list-card{
+		width: calc(100%/4*2);
+		margin-bottom: 24px;
+	}
+	.list{
+		margin-bottom: 32px;
+	}
+	.banner{
+		padding: 32px 0;
+	}
+	.footer{
+		padding: 32px 0;
+	}
+
+}

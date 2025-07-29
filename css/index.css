@@ -1,0 +1,242 @@
+/*最上方導覽列*/
+.navbar{
+    padding: 16px 0px;
+}
+.navbar a{
+	border-bottom: 1px solid transparent; /*hover時不會抖動*/
+}
+.navbar a:hover{
+	border-bottom:1px solid var(--neutral-900);
+}
+/*hero-section*/
+.hero{
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner.png?raw=true");
+    max-width: 100%;
+    background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.hero-content{
+    width: 586px;
+    padding-top: 289px;
+    padding-bottom: 288px;
+    margin-left: 200px;
+    color:var(--neutral-white);
+}
+.hero-content .h1{
+    font-size: 64px;
+}
+.hero-content .btn{
+    background-color: var(--primary-300);
+}
+.hero-content .btn:hover{
+    background-color: var(--neutral-white);
+}
+
+main{
+    padding: 64px 0;
+}
+/*新品上市區塊*/
+.new-arrival .title{
+    text-align: center;
+}
+.product .list-card a:hover{
+    box-shadow: 10px 10px 10px -6px;
+}
+/*熱銷補貨區塊*/
+.best-seller{
+    padding: 64px 0;
+}
+.best-seller .h2{
+    padding: 5px 0px;
+}
+.best-seller .col-3{
+    position: relative;
+    z-index: 5;
+}
+.best-seller .list .sell-well{
+    width: 91px;
+    padding: 8px 12px;
+    position:absolute;
+    top: 0;
+    left: 12px;
+    background-color: var(--primary-100);
+    z-index: 10;
+}
+.sell-well p{
+    font-size: 14px;
+    text-align: center;
+    white-space: pre; /*保留原始空白與換行*/
+    color: var(--primary-400);
+}
+.best-seller a:hover{
+    box-shadow: 10px 10px 10px -6px;
+}
+/*跨界聯名*/
+.sale{
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-co-branded.png?raw=true");
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+    margin: 48px 0;
+}
+.sale-content{
+    max-width: 634px;
+    margin: 0 auto;
+    padding: 100px 0;
+    text-align: center;
+    margin-bottom: 84px;
+}
+.sale-content .title .h1{
+    color: var(--neutral-white);
+}
+.sale-content .title .x-color{
+    font-size: 40px;
+    color: var(--primary-300);
+}
+.sale-content .h2{
+    color: var(--neutral-white);
+}
+.sale-content p{
+    font-size: 20px;
+    color: var(--neutral-500);
+}
+.sale-content .btn{
+    margin: 0px 259.5px;
+    background-color: var(--primary-300);
+}
+.sale-content .btn:hover{
+    background-color: var(--neutral-white);
+}
+
+/*依系列選購區塊*/
+.series{
+    padding: 64px 0;
+}
+.series .h2{
+    padding: 5px 0px;
+}
+/*系列選購 圖片亮度為 60%*/
+.series img{
+    filter: brightness(60%);
+}
+.series .series-name{
+    
+    text-align: center;
+    color: var(--neutral-white);
+}
+.series .serie-img1{
+    position: relative;
+    z-index: 5;
+}
+.series .list .name1{
+    width: 219px;
+    position: absolute;
+    top:118px;
+    left:43.5px;
+    right:43.5px;
+    z-index: 10;
+}
+.series .serie-img2{
+    position: relative;
+    z-index: 5;
+}
+.series .list .name2{
+    width: 201px;
+    position: absolute;
+    top:118px;
+    left:52.5px;
+    right:52.5px;
+    z-index: 10;
+}
+.series .serie-img3{
+    position: relative;
+    z-index: 5;
+}
+.series .list .name3{
+    width: 253px;
+    position: absolute;
+    top:118px;
+    left:26.5px;
+    right:26.5px;
+    z-index: 10;
+}
+.series .serie-img4{
+    position: relative;
+    z-index: 5;
+}
+.series .list .name4{
+    width: 205px;
+    position: absolute;
+    top:118px;
+    left:50.5px;
+    right:50.5px;
+    z-index: 10;
+}
+.series a:hover img{
+    box-shadow: 10px 10px 10px -6px;
+}
+.series a:hover .series-name{
+    color: var(--neutral-900);
+}
+
+/*穿搭靈感區塊*/
+.style{
+    padding: 64px 0;
+    margin-bottom: 48px;
+}
+.style-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -4px;
+}
+.style-col-4{
+    width: calc(100%/12*4);
+    padding: 4px;
+}
+.style-col-6{
+    width: calc(100%/12*6);
+    padding: 4px;
+}
+.style-col-12{
+    width: 100%;
+    padding: 4px;
+}
+
+/*橫幅*/
+.call-to-action{
+	padding: 24px 0;
+	background-color: var(--primary-200);
+}
+.call-to-action .btn{
+	color: var(--neutral-white);
+	background-color: var(--neutral-900);
+}
+.call-to-action .btn:hover{
+	color:var(--neutral-900);
+	background-color: var(--neutral-100);
+}
+
+/*footer & copyright*/
+.footer{
+	padding: 64px 0;
+	background-color: var(--neutral-100);
+}
+.footer .navbar{
+	margin-bottom: 24px;
+}
+.copyright{
+	text-align: center;
+	border-top: 1px solid var(--neutral-300);
+}
+.copyright p{
+	font-size: 14px;
+	font-weight: 400;
+	color: var(--neutral-600);
+}
+.copyright .p-1{
+	margin-top: 32px;
+}
+
