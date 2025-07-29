@@ -30,6 +30,7 @@
 	border: none;
 	cursor: pointer;
 	background-color: transparent;
+	border: 1px solid transparent;
 }
 @media(max-width:768px){
 	.btn{
